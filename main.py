@@ -2,8 +2,11 @@ import os
 import discord
 from discord.ext import commands
 import requests
+from dotenv import load_dotenv
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
+
+load_dotenv()
 
 # set up intents
 intents = discord.Intents.default()
